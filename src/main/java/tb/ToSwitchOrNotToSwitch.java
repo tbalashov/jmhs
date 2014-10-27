@@ -24,7 +24,7 @@ import static org.openjdk.jmh.annotations.Scope.*;
 @State(Thread)
 public class ToSwitchOrNotToSwitch {
 
-    @Param({"1"})
+    @Param({"2"})
     private int x;
 
     private HashMap<Integer, Integer> hashMap;
@@ -71,10 +71,17 @@ public class ToSwitchOrNotToSwitch {
     }
 
     @Benchmark
-    public int _if() {
+    public int _tern() {
         return (x == 1) ? 1
                 : (x == 3) ? -1
                 : 0;
+    }
+
+    @Benchmark
+    public int _if() {
+        if (x == 1) return 1;
+        if (x == 3) return -1;
+        return 0;
     }
 
     @Benchmark
