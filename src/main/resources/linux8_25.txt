@@ -1,0 +1,216 @@
+/usr/lib/jvm/java-8-oracle/bin/java -Didea.launcher.port=7533 -Didea.launcher.bin.path=/home/tima/java/idea13u/bin -Dfile.encoding=UTF-8 -classpath /usr/lib/jvm/java-8-oracle/jre/lib/jfxswt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/javaws.jar:/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar:/usr/lib/jvm/java-8-oracle/jre/lib/deploy.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/plugin.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/jfxrt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/localedata.jar:/home/tima/IdeaProjects/jmhs/target/classes:/home/tima/.m2/repository/org/openjdk/jmh/jmh-core/1.1.1/jmh-core-1.1.1.jar:/home/tima/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/home/tima/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/tima/.m2/repository/com/carrotsearch/hppc/0.6.1/hppc-0.6.1.jar:/home/tima/java/idea13u/lib/idea_rt.jar com.intellij.rt.execution.application.AppMain tb.ToSwitchOrNotToSwitch
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Didea.launcher.port=7533 -Didea.launcher.bin.path=/home/tima/java/idea13u/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: tb.ToSwitchOrNotToSwitch._if
+# Parameters: (x = 1)
+
+# Run progress: 0.00% complete, ETA 00:01:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.948 ns/op
+# Warmup Iteration   2: 1.153 ns/op
+# Warmup Iteration   3: 1.027 ns/op
+# Warmup Iteration   4: 0.989 ns/op
+# Warmup Iteration   5: 1.020 ns/op
+Iteration   1: 1.040 ns/op
+Iteration   2: 1.021 ns/op
+Iteration   3: 1.021 ns/op
+Iteration   4: 1.027 ns/op
+Iteration   5: 1.021 ns/op
+
+
+Result: 1.026 ±(99.9%) 0.031 ns/op [Average]
+  Statistics: (min, avg, max) = (1.021, 1.026, 1.040), stdev = 0.008
+  Confidence interval (99.9%): [0.995, 1.057]
+
+
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Didea.launcher.port=7533 -Didea.launcher.bin.path=/home/tima/java/idea13u/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: tb.ToSwitchOrNotToSwitch._switch
+# Parameters: (x = 1)
+
+# Run progress: 14.29% complete, ETA 00:01:15
+# Fork: 1 of 1
+# Warmup Iteration   1: 2.010 ns/op
+# Warmup Iteration   2: 1.982 ns/op
+# Warmup Iteration   3: 2.013 ns/op
+# Warmup Iteration   4: 2.016 ns/op
+# Warmup Iteration   5: 2.006 ns/op
+Iteration   1: 1.996 ns/op
+Iteration   2: 2.007 ns/op
+Iteration   3: 2.013 ns/op
+Iteration   4: 2.003 ns/op
+Iteration   5: 1.991 ns/op
+
+
+Result: 2.002 ±(99.9%) 0.034 ns/op [Average]
+  Statistics: (min, avg, max) = (1.991, 2.002, 2.013), stdev = 0.009
+  Confidence interval (99.9%): [1.968, 2.036]
+
+
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Didea.launcher.port=7533 -Didea.launcher.bin.path=/home/tima/java/idea13u/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: tb.ToSwitchOrNotToSwitch.arr
+# Parameters: (x = 1)
+
+# Run progress: 28.57% complete, ETA 00:01:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 1.357 ns/op
+# Warmup Iteration   2: 1.321 ns/op
+# Warmup Iteration   3: 1.341 ns/op
+# Warmup Iteration   4: 1.346 ns/op
+# Warmup Iteration   5: 1.337 ns/op
+Iteration   1: 1.350 ns/op
+Iteration   2: 1.339 ns/op
+Iteration   3: 1.336 ns/op
+Iteration   4: 2.265 ns/op
+Iteration   5: 1.330 ns/op
+
+
+Result: 1.524 ±(99.9%) 1.596 ns/op [Average]
+  Statistics: (min, avg, max) = (1.330, 1.524, 2.265), stdev = 0.415
+  Confidence interval (99.9%): [-0.072, 3.120]
+
+
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Didea.launcher.port=7533 -Didea.launcher.bin.path=/home/tima/java/idea13u/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: tb.ToSwitchOrNotToSwitch.hashMap
+# Parameters: (x = 1)
+
+# Run progress: 42.86% complete, ETA 00:00:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 5.518 ns/op
+# Warmup Iteration   2: 5.455 ns/op
+# Warmup Iteration   3: 5.568 ns/op
+# Warmup Iteration   4: 5.550 ns/op
+# Warmup Iteration   5: 5.624 ns/op
+Iteration   1: 6.111 ns/op
+Iteration   2: 5.614 ns/op
+Iteration   3: 5.693 ns/op
+Iteration   4: 5.609 ns/op
+Iteration   5: 5.734 ns/op
+
+
+Result: 5.752 ±(99.9%) 0.798 ns/op [Average]
+  Statistics: (min, avg, max) = (5.609, 5.752, 6.111), stdev = 0.207
+  Confidence interval (99.9%): [4.954, 6.551]
+
+
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Didea.launcher.port=7533 -Didea.launcher.bin.path=/home/tima/java/idea13u/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: tb.ToSwitchOrNotToSwitch.hashtable
+# Parameters: (x = 1)
+
+# Run progress: 57.14% complete, ETA 00:00:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 27.844 ns/op
+# Warmup Iteration   2: 27.658 ns/op
+# Warmup Iteration   3: 28.100 ns/op
+# Warmup Iteration   4: 28.029 ns/op
+# Warmup Iteration   5: 27.907 ns/op
+Iteration   1: 27.985 ns/op
+Iteration   2: 27.786 ns/op
+Iteration   3: 29.096 ns/op
+Iteration   4: 28.027 ns/op
+Iteration   5: 28.684 ns/op
+
+
+Result: 28.316 ±(99.9%) 2.125 ns/op [Average]
+  Statistics: (min, avg, max) = (27.786, 28.316, 29.096), stdev = 0.552
+  Confidence interval (99.9%): [26.190, 30.441]
+
+
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Didea.launcher.port=7533 -Didea.launcher.bin.path=/home/tima/java/idea13u/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: tb.ToSwitchOrNotToSwitch.hppc
+# Parameters: (x = 1)
+
+# Run progress: 71.43% complete, ETA 00:00:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 6.512 ns/op
+# Warmup Iteration   2: 6.521 ns/op
+# Warmup Iteration   3: 6.396 ns/op
+# Warmup Iteration   4: 6.051 ns/op
+# Warmup Iteration   5: 7.113 ns/op
+Iteration   1: 6.111 ns/op
+Iteration   2: 6.233 ns/op
+Iteration   3: 6.138 ns/op
+Iteration   4: 6.105 ns/op
+Iteration   5: 6.127 ns/op
+
+
+Result: 6.143 ±(99.9%) 0.200 ns/op [Average]
+  Statistics: (min, avg, max) = (6.105, 6.143, 6.233), stdev = 0.052
+  Confidence interval (99.9%): [5.943, 6.343]
+
+
+# VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+# VM options: -Didea.launcher.port=7533 -Didea.launcher.bin.path=/home/tima/java/idea13u/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: tb.ToSwitchOrNotToSwitch.map
+# Parameters: (x = 1)
+
+# Run progress: 85.71% complete, ETA 00:00:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 5.567 ns/op
+# Warmup Iteration   2: 5.405 ns/op
+# Warmup Iteration   3: 5.830 ns/op
+# Warmup Iteration   4: 5.726 ns/op
+# Warmup Iteration   5: 6.935 ns/op
+Iteration   1: 5.607 ns/op
+Iteration   2: 5.800 ns/op
+Iteration   3: 6.230 ns/op
+Iteration   4: 5.703 ns/op
+Iteration   5: 5.593 ns/op
+
+
+Result: 5.787 ±(99.9%) 1.006 ns/op [Average]
+  Statistics: (min, avg, max) = (5.593, 5.787, 6.230), stdev = 0.261
+  Confidence interval (99.9%): [4.781, 6.792]
+
+
+# Run complete. Total time: 00:01:27
+
+Benchmark                            (x)  Mode  Samples   Score   Error  Units
+t.ToSwitchOrNotToSwitch._if            1  avgt        5   1.026 ± 0.031  ns/op
+t.ToSwitchOrNotToSwitch._switch        1  avgt        5   2.002 ± 0.034  ns/op
+t.ToSwitchOrNotToSwitch.arr            1  avgt        5   1.524 ± 1.596  ns/op
+t.ToSwitchOrNotToSwitch.hashMap        1  avgt        5   5.752 ± 0.798  ns/op
+t.ToSwitchOrNotToSwitch.hashtable      1  avgt        5  28.316 ± 2.125  ns/op
+t.ToSwitchOrNotToSwitch.hppc           1  avgt        5   6.143 ± 0.200  ns/op
+t.ToSwitchOrNotToSwitch.map            1  avgt        5   5.787 ± 1.006  ns/op
+
+Process finished with exit code 0
